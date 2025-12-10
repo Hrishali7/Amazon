@@ -11,7 +11,7 @@ const Cart = () => {
     0
   );
 
-  const updateQty = (item, quantity) => {
+  const updateQuantity = (item, quantity) => {
     dispatch(addToCart({ ...item, quantity: Number(quantity) }));
   };
 
@@ -54,7 +54,7 @@ const Cart = () => {
                       type="number"
                       min="1"
                       value={item.quantity}
-                      onChange={(e) => updateQty(item, e.target.value)}
+                      onChange={(e) => updateQuantity(item, e.target.value)}
                       className="quantity-input"
                     />
                   </td>
